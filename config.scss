@@ -1,0 +1,15 @@
+$label-margin-top: 10px !default;
+$label-margin-bottom: 10px !default;
+$label-margin-left: 0 !default;
+$label-margin-right: 0 !default;
+//Defined margins for each screens.
+$label-margin-for-screens: () !default;
+/*$label-margin-for-screens: (
+    s1: (
+        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
+        bottom: 20px,
+        left: 20px,
+        right: 20px,
+    ),
+    ...
+) !default;*/

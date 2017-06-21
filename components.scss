@@ -1,0 +1,6 @@
+label {
+    display: inline-block;
+    @include include-element-margin($label-margin-top, $label-margin-bottom, $label-margin-left, $label-margin-right, $label-margin-for-screens);
+    border: 0;
+    padding: 0;
+}
