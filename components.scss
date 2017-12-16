@@ -1,6 +1,32 @@
 label {
-    display: inline-block;
-    @include include-element-margin($label-margin-top, $label-margin-bottom, $label-margin-left, $label-margin-right, $label-margin-for-screens);
-    border: 0;
-    padding: 0;
+    display: $label-display;
+    @include margin-shorthand-with-screens-support((
+        top: $label-margin-top,
+        bottom: $label-margin-bottom,
+        left: $label-margin-left,
+        right: $label-margin-right
+    ), $label-margin-for-screens);
+    @include outline-shorthand((
+        width: $label-outline-width,
+        style: $label-outline-style,
+        color: $label-outline-color,
+        make-shorthand: true
+    ));
+    @include border-shorthand(map-merge((
+        border: (
+            width: $label-border-width,
+            style: $label-border-style,
+            color: $label-border-color,
+            make-shorthand: true
+        )
+    ), $label-borders));
+    @include padding-shorthand((
+        top: $label-padding-top,
+        bottom: $label-padding-bottom,
+        left: $label-padding-left,
+        right: $label-padding-right
+    ));
+    @if mixin-exists(label-extra-style) {
+        @include label-extra-style();
+    }
 }

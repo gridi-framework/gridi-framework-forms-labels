@@ -1,15 +1,29 @@
-$label-margin-top: 10px !default;
-$label-margin-bottom: 10px !default;
-$label-margin-left: 0 !default;
-$label-margin-right: 0 !default;
-//Defined margins for each screens.
-$label-margin-for-screens: () !default;
-/*$label-margin-for-screens: (
-    s1: (
-        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
-        bottom: 20px,
-        left: 20px,
-        right: 20px,
-    ),
-    ...
-) !default;*/
+//Label
+$label-display: block !default;
+
+//Margins
+$label-margin-top: $form-item-elements-margin-top !default;
+$label-margin-bottom: $form-item-elements-margin-bottom !default;
+$label-margin-left: $form-item-elements-margin-left !default;
+$label-margin-right: $form-item-elements-margin-right !default;
+$label-margin-for-screens: $form-item-elements-margin-for-screens !default;
+
+//Outline
+$label-outline-width: 0 !default;
+$label-outline-style: null !default;
+$label-outline-color: null !default;
+
+//Borders
+$label-border-width: 0 !default;
+$label-border-style: null !default;
+$label-border-color: null !default;
+$label-borders: () !default;
+
+//Paddings
+$label-padding-top: 0 !default;
+$label-padding-bottom: 0 !default;
+$label-padding-left: 0 !default;
+$label-padding-right: 0 !default;
+
+//Extra style
+//@mixin label-extra-style() {} //Create this mixin before import module when you want add some special style for element
